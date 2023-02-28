@@ -26,7 +26,7 @@ async function api(page_value,data){
         console.log(out11.results);
         var parent = document.querySelector('.parent')
     
-        if(out11.results.length==0){
+        if((page_value=='1') && (out11.results.length==0)){
             parent.innerText="NO DATA FOUND";
             parent.style.color="black";
         }else{
